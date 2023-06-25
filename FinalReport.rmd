@@ -51,6 +51,24 @@ mutate(across(where(is.character), as.factor))
 
 #### Plot barplots ggplot way
 
+```{r}
+dd2 <- DRUGUSR %>% group_by(infected,treatment) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=infected,y=count,fill=treatment))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+
+
+The first plot shows how many people got infected. It looks like there may be less than 100 people with AIDS.  In the % plot it treats both groups in % terms. 25% of people that had AIDS has taken the drug. 70% of the of the people that has AIDS go the placebo. more people on the placebo side got sick because they didn't take the drug. it prevents those who took it from getting AIDs.
 
 
 
