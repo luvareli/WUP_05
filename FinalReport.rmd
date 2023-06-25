@@ -20,8 +20,14 @@ A new  preventative aides drug (triUmpsal) is under test in clinical trials. Con
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
-
+I need to use a filter demand form the helper cheat sheet. The filter to get the data out the triUmp that is comprise of drug users. I will proceed to use a set of codes later on in this process.
 # Results
+
+
+```{r}
+DRUGUSR<-filter(triUmp,DrugUser=="yes")
+```
+
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
 
