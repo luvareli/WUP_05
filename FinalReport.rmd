@@ -101,3 +101,5 @@ the probability becomes slightly low to the number of 0000000423. this tells us 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+With this project we learned to incorporate the Mytricks.rmd and the dplyr. We observed in a graph how the drug and the placebo take into affect. The drugs were taking positive effects and worked on the people. The inferential test concluded that the drug prevented AIDS and worked.
